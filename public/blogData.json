@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "heading": "Shiva",
+    "link": "first-blog-post",
+    "body": "Shiva, one of the principal deities in Hinduism, is revered as the Supreme Being within Shaivism, a major tradition within Hinduism. Known as the `Destroyer`` within the Trimurti, the Hindu trinity that includes Brahma and Vishnu, Shiva's role is to destroy the universe in order to recreate it, symbolizing the cycle of birth, death, and rebirth. He is often depicted with a third eye, symbolizing wisdom and insight, and adorned with serpents, symbolizing his mastery over the primal forces of nature. Shiva is also known as the patron god of yoga, meditation, and arts, and is often depicted in deep meditation or performing the Tandava, a vigorous dance that is the source of the cycle of creation, preservation, and dissolution.",
+    "coverPhoto": "https://img.freepik.com/premium-photo/lord-shiva-meditating-finite-galaxies_863280-67.jpg?w=1800"
+  },
+  {
+    "id": 2,
+    "heading": "Rudraksh",
+    "link": "second-blog-post",
+    "body": "Rudraksha, meaning `Tears of Rudra`` (Shiva), are seeds from the Elaeocarpus ganitrus tree, considered sacred in Hinduism for their spiritual and healing properties. These beads are traditionally used as prayer beads, particularly in the worship of Shiva, and are believed to provide protection, bring peace, and enhance spiritual growth. The beads vary in size and the number of facets or `mukhis`` they have, each type possessing different spiritual benefits. Wearing Rudraksha is said to align the chakras, balance energies, and foster a connection with the divine, thus aiding in meditation and spiritual practices.",
+    "coverPhoto": "https://www.purevedicgems.com/wp-content/uploads/2016/06/rudraksha-2.jpg"
+  },
+  {
+    "id": 3,
+    "heading": "Krishna",
+    "link": "third-blog-post",
+    "body": "Krishna, a major deity in Hinduism, is worshipped as the eighth avatar of Vishnu and also as the Supreme God in his own right. Known for his enchanting persona, divine love, and playful exploits, Krishna's life and teachings are chronicled in the Mahabharata, Bhagavad Gita, and the Bhagavata Purana. He is often depicted as a young cowherd boy playing the flute, symbolizing divine love and joy, or as the charioteer and guide of Arjuna in the Bhagavad Gita, where he imparts profound spiritual wisdom. Krishna's teachings emphasize devotion (bhakti), righteousness (dharma), and the importance of selfless action (karma yoga), making him a beloved figure in Hindu devotion and philosophy.",
+    "coverPhoto": "http://2.bp.blogspot.com/-mV4BNeBYjPU/UBA4Rax45JI/AAAAAAAAAUQ/EvZSaZVAmvE/s1600/13.jpg"
+  },
+  {
+    "id": 4,
+    "heading": "Maa Durga",
+    "link": "fourth-blog-post",
+    "body": "Maa Durga, the fierce and powerful goddess in Hinduism, embodies the feminine force (Shakti) and is revered as the protector of the universe. Known for her strength, courage, and divine energy, she is often depicted riding a lion or tiger, armed with various weapons given by different gods to combat evil forces. Durga's most celebrated victory is over the buffalo demon Mahishasura, symbolizing the triumph of good over evil. She is worshipped during the festival of Navratri, which celebrates her divine intervention and protection. Durga's multiple forms and manifestations, including Kali, Parvati, and Ambika, represent the various aspects of womanhood and the nurturing yet fierce nature of the divine mother.",
+    "coverPhoto": "https://2.bp.blogspot.com/-98kpyTUh0uw/W6kdfsOoEgI/AAAAAAAAABM/e1-PYa3GbvQZZrHVnoxpjUFENz2S9-IfgCEwYBhgL/s1600/Durga-puja-android-wallpaper-HD.jpg"
+  }
+]

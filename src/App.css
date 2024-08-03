@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Container Styles */
+.container,
+.first-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1b2430;
+  color: #fff;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial position for transition */
+  transition: opacity 1s ease, transform 1s ease; /* Transition effect */
+}
+
+.container img,
+.first-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content,
+.first-content {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  text-align: left;
+}
+
+.content h4,
+.first-content h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.content p,
+.first-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #17cf97;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #14b27f;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.first-content input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Social Media Styles */
+.social-media {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.social-media h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media ul li {
+  display: inline;
+}
+
+.social-media ul li a {
+  color: #1b2430;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media ul li a:hover {
+  color: #17cf97;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container,
+  .first-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content h4,
+  .first-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .content p,
+  .first-content p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .social-media ul {
+    gap: 15px;
+  }
+
+  .social-media ul li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h4,
+  .first-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .content p,
+  .first-content p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .social-media ul {
+    gap: 10px;
+  }
+
+  .social-media ul li a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Classes for transition effects */
+.scroll-appear {
+  opacity: 1;
+  transform: translateY(0);
+}
