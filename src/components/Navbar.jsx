@@ -9,6 +9,10 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked });
   };
 
+  handleMenuItemClick = () => {
+    this.setState({ clicked: false });
+  };
+
   render() {
     return (
       <>
@@ -22,6 +26,7 @@ class Navbar extends Component {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              {/* SVG path */}
               <path
                 className="ccustom"
                 fillRule="evenodd"
@@ -33,16 +38,16 @@ class Navbar extends Component {
           </Link>
           <div>
             <ul id="navbar" className={this.state.clicked ? "active" : ""}>
-              <li>
+              <li onClick={this.handleMenuItemClick}>
                 <Link to={"/"}>Home</Link>
               </li>
-              <li>
+              <li onClick={this.handleMenuItemClick}>
                 <Link to={"/about"}>About</Link>
               </li>
-              <li>
+              <li onClick={this.handleMenuItemClick}>
                 <Link to={"/blogs"}>Blog</Link>
               </li>
-              <li>
+              <li onClick={this.handleMenuItemClick}>
                 <Link to={"/contact"}>Contact</Link>
               </li>
             </ul>

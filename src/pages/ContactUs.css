@@ -5,6 +5,9 @@
   padding: 20px;
   background-color: #f4f4f9;
   color: #333;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
 .contact-info,
@@ -70,7 +73,11 @@
   background-color: #14b27f;
 }
 
-/* Responsive Styles */
+.scroll-appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
   .contact-info,
   .contact-form {

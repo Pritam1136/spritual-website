@@ -1,13 +1,19 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./About.css";
 
 const About = () => {
+  const location = useLocation();
+
   useEffect(() => {
     const elements = document.querySelectorAll(".about-container");
     elements.forEach((el) => {
-      el.classList.add("scroll-appear");
+      el.classList.remove("scroll-appear");
+      setTimeout(() => {
+        el.classList.add("scroll-appear");
+      }, 100); // Delay to ensure the class is removed before re-adding it
     });
-  }, []);
+  }, [location]);
 
   return (
     <div className="about-container">

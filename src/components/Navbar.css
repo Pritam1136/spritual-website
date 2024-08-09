@@ -11,6 +11,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: right 0.3s ease-in-out; /* Add transition for smooth closing */
 }
 
 #navbar li {
@@ -60,30 +61,25 @@ nav {
     justify-content: flex-start;
     position: fixed;
     top: 90px;
-    right: -100vh;
+    right: -100vh; /* Ensure it is initially off-screen */
     width: 300px;
     height: 100vh;
     background: #2a3239;
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 40px 0 0 10px;
-    transition: 0.3s ease-in-out;
     z-index: 2;
+    padding: 20px;
+    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
   }
 
   #navbar.active {
-    right: 0px;
+    right: 0; /* Slide in */
   }
 
   #navbar li {
-    margin-bottom: 25px;
+    padding: 10px 0;
   }
 
   #mobile {
     display: block;
-  }
-
-  #mobile i {
-    font-size: 24px;
     cursor: pointer;
   }
 }
