@@ -45,10 +45,12 @@ class Navbar extends Component {
                 <Link to={"/about"}>About</Link>
               </li>
               <li onClick={this.handleMenuItemClick}>
-                <Link to={"/blogs"}>Blog</Link>
+                <Link to={"/blogs"}>Works</Link>
               </li>
               <li onClick={this.handleMenuItemClick}>
-                <Link to={"/contact"}>Contact</Link>
+                <Link className="contactButton" to={"/contact"}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

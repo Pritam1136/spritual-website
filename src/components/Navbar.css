@@ -2,35 +2,73 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1b2430;
-  padding: 20px 80px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  background: white; /* Changed background color to white */
+  padding: 30px 80px;
+  box-shadow: 0 5px 15px rgba(78, 76, 76, 0.06);
+  position: relative; /* For pseudo-elements positioning */
+}
+
+nav::before,
+nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 200px; /* Width of the glowing effect */
+  background: linear-gradient(
+    to center,
+    rgba(255, 223, 0, 0.8),
+    transparent
+  ); /* Higher opacity on the sides */
+  pointer-events: none;
+  z-index: 1; /* Ensure it appears below the navbar content */
+}
+
+nav::before {
+  left: 0;
+}
+
+nav::after {
+  right: 0;
 }
 
 #navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: right 0.3s ease-in-out; /* Add transition for smooth closing */
+  transition: right 0.3s ease-in-out;
 }
 
 #navbar li {
   list-style: none;
   padding: 0 20px;
   position: relative;
+  z-index: 2; /* Ensure links appear above the glowing effect */
 }
 
 #navbar li a {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fff;
+  color: #1b2430; /* Changed text color to dark */
   transition: 0.5s ease-in-out;
+}
+
+.contactButton {
+  background-color: #ffde00;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contactButton:hover {
+  color: #1b2430 !important; /* Ensure the text color on hover */
+  background-color: #ffde00 !important; /* Ensure the background color on hover */
+  border: none !important; /* Ensure no borders if applicable */
 }
 
 #navbar li a:hover,
 #navbar li a.active {
-  color: #17cf97;
+  color: #ffde00; /* Updated hover and active color to yellow */
 }
 
 #navbar li a:hover::after,
@@ -38,7 +76,7 @@ nav {
   content: "";
   width: 30%;
   height: 2px;
-  background: #17cf97;
+  background: #ffde00; /* Updated hover and active underline color to yellow */
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -49,7 +87,7 @@ nav {
 }
 
 #mobile i {
-  color: #fff;
+  color: #1b2430; /* Changed mobile icon color to dark */
   align-items: center;
 }
 
@@ -61,17 +99,17 @@ nav {
     justify-content: flex-start;
     position: fixed;
     top: 90px;
-    right: -100vh; /* Ensure it is initially off-screen */
+    right: -100vh;
     width: 300px;
     height: 100vh;
-    background: #2a3239;
+    background: #f7f7f7; /* Slightly off-white background for mobile */
     z-index: 2;
     padding: 20px;
-    transition: right 0.3s ease-in-out; /* Smooth slide-in effect */
+    transition: right 0.3s ease-in-out;
   }
 
   #navbar.active {
-    right: 0; /* Slide in */
+    right: 0;
   }
 
   #navbar li {

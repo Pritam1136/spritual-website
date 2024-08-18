@@ -1,8 +1,15 @@
 /* Footer Styles */
 footer {
-  background-color: #1b2430;
-  color: #fff;
+  background-color: whitesmoke;
+  color: #1b2430;
   padding: 40px 0;
+}
+
+.seperate {
+  height: 1px;
+  width: 100%;
+  color: black;
+  background-color: black;
 }
 
 .footer-container {
@@ -42,14 +49,14 @@ footer {
 
 .footer-links ul li a,
 .footer-social-media ul li a {
-  color: #fff;
+  color: #1b2430;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-links ul li a:hover,
 .footer-social-media ul li a:hover {
-  color: #17cf97;
+  color: #ffde00;
 }
 
 .footer-social-media ul {

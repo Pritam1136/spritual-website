@@ -7,14 +7,47 @@ body {
   color: #333;
 }
 
+.icons {
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.icons ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.icons ul li {
+  margin: 0 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.icons ul li a {
+  color: black;
+  font-size: large;
+  text-decoration: none;
+}
+
+.icons ul li a:hover {
+  color: gray;
+}
+
 /* About Container Styles */
 .about-container {
   margin: 20px auto;
   padding: 20px;
   max-width: 1200px;
   border-radius: 10px;
-  background-color: #1b2430;
-  color: #fff;
+  background-color: whitesmoke;
+  color: #1b2430;
   opacity: 0; /* Initially hidden */
   transform: translateY(20px); /* Initial position (slightly shifted down) */
   transition: opacity 2s ease, transform 1s ease; /* Smooth animation */
@@ -45,12 +78,16 @@ body {
 .about-text h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #4169E1;
 }
 
 .about-text p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: #6A5ACD;
 }
 
 .about-image img {
@@ -58,6 +95,21 @@ body {
   height: auto;
   border-radius: 10px;
 }
+
+.mainParagraph {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center text within the paragraph */
+  padding: 0 20px; /* Optional: Padding for better readability on small screens */
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainParagraph p {
+  max-width: 80%; /* Optional: Limit the paragraph width for better readability */
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

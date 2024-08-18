@@ -5,9 +5,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     const handleScroll = () => {
-      const elements = document.querySelectorAll(
-        ".container, .first-container"
-      );
+      const elements = document.querySelectorAll(".container");
       elements.forEach((element) => {
         const rect = element.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom >= 0) {
@@ -25,47 +23,55 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
-      <div className="first-container">
-        <div className="first-content">
-          <h4>Welcome Here</h4>
-          <p>
-            Take your first step towards <b>Sprituality</b>
-          </p>
-          <input type="email" placeholder="Enter you gmail...." />
-          <button>Subscribe</button>
-        </div>
-        <div>
-          <img
-            src="https://beerbiceps.com/wp-content/uploads/2023/02/Screenshot-49-1.png"
-            alt=""
-          />
-        </div>
+      {/* Full-Width Image Section */}
+      <div className="full-width-image-container">
+        <img
+          src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg"
+          alt="Spiritual Journey"
+        />
       </div>
+
+      {/* Content Section */}
       <div className="container">
         <div>
           <img
             src="https://beerbiceps.com/wp-content/uploads/2023/02/Screenshot-49-1.png"
-            alt="photo"
+            alt="Ranveer"
           />
         </div>
         <div className="content">
-          <h4>Meet Ranveer</h4>
-          <p>
-            BeerBiceps a.k.a. Ranveer Allahbadia is an entrepreneur, YouTuber,
-            Podcaster, and content creator. My life mantra is to explore the
-            unexplored. But how did this journey start? From being an average
-            engineering student to having around 12Million+ followers across 7
-            YouTube channels and 3 successful start-ups. This is my journey.
-          </p>
+          <h4>Akshat ka safar</h4>
+          <div>
+            <div className="contentDiv">
+              <div>1M+</div>
+              <p>SM reach</p>
+            </div>
+            <div className="contentDiv">
+              <div>10K+</div>
+              <p>book sold</p>
+            </div>
+          </div>
           <button>
-            <Link to={"/about"}>Know more</Link>
+            <Link to="/about">Know more</Link>
           </button>
         </div>
       </div>
+
+      {/* Social Media Section */}
       <div className="social-media">
         <h4>Join the Community</h4>
+        <div className="community">
+          <p className="communityParagraph">
+            Keep up with Akshat Gupta by following him on his social media
+            profiles. You’ll get all the latest updates on his upcoming
+            projects, exciting events, engaging podcasts, and more interesting
+            content.
+          </p>
+        </div>
+
         <ul>
           <li>
             <a href="#">

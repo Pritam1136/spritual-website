@@ -5,6 +5,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <>
+      <div className="seperate"></div>
       <footer>
         <div className="footer-container">
           <div className="footer-content">

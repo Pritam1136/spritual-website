@@ -1,18 +1,30 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import "./Blog.css";
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  useEffect(() => {
-    fetch("/blogData.json")
-      .then((response) => response.json())
-      .then((data) => setBlogs(data))
-      .catch((error) => console.error("Error fetching blog data:", error));
-  }, []);
+  const [videos, setVideos] = useState([
+    {
+      id: 1,
+      link: "https://www.youtube.com/embed/z_UfPY8NXkM",
+      title: "Video 1",
+    },
+    {
+      id: 2,
+      link: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      title: "Video 2",
+    },
+    {
+      id: 3,
+      link: "https://www.youtube.com/embed/9bZkp7q19f0",
+      title: "Video 3",
+    },
+    {
+      id: 4,
+      link: "https://www.youtube.com/embed/OC9gl-UEYVo",
+      title: "Title 4"
+    }
+  ]);
 
   useEffect(() => {
     const elements = document.querySelectorAll(".blog-container");
@@ -22,22 +34,22 @@ const Blog = () => {
         el.classList.add("scroll-appear");
       }, 100);
     });
-  }, [location]);
-
-  const handleRedirect = (link) => {
-    navigate(`/blogs/${link}`);
-  };
+  }, []);
 
   return (
     <div className="blog-container">
-      {blogs.map((blog) => (
-        <div
-          className="blog-card"
-          key={blog.id}
-          onClick={() => handleRedirect(blog.link)}
-        >
-          <img src={blog.coverPhoto} alt={blog.heading} />
-          <h3>{blog.heading}</h3>
+      {videos.map((video) => (
+        <div className="blog-card" key={video.id}>
+          <iframe
+            width="100%"
+            height="200"
+            src={video.link}
+            title={video.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ border: "none" }}
+          ></iframe>
+          <h3>{video.title}</h3>
         </div>
       ))}
     </div>

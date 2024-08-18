@@ -18,8 +18,8 @@
   box-sizing: border-box;
   padding: 15px;
   border-radius: 10px;
-  background-color: #1b2430;
-  color: #fff;
+  background-color: whitesmoke;
+  color: #1b2430;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }

@@ -8,6 +8,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contact-info,
@@ -15,10 +16,22 @@
   flex: 1;
   max-width: 600px;
   margin: 20px;
-  background-color: #1b2430;
+  background-color: whitesmoke;
   padding: 20px;
   border-radius: 10px;
-  color: #fff;
+  color: #1b2430;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  max-width: 600px;
+  margin: 20px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  color: #1b2430;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 .contact-info h2,
