@@ -22,8 +22,13 @@ const Blog = () => {
     {
       id: 4,
       link: "https://www.youtube.com/embed/OC9gl-UEYVo",
-      title: "Title 4"
-    }
+      title: "Title 4",
+    },
+    {
+      id: 5,
+      link: "https://www.youtube.com/embed/IRZg5qiUAA0",
+      title: "Title 5",
+    },
   ]);
 
   useEffect(() => {

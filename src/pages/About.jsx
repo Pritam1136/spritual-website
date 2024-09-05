@@ -77,12 +77,37 @@ const About = () => {
               expertise to the table, allowing us to tackle challenges and
               achieve great things.
             </p>
+            <h2>Akshat Gupta: A Literary and Creative Force</h2>
+            <p>
+              Akshat Gupta’s remarkable writing prowess has earned him
+              prestigious awards, including the Golden Iconic Awards, Super
+              Power Author Awards, and accolades at the Swadesh Conclave. His
+              talent has taken him to the International Temple Convention 2023,
+              where he showcased his poetic finesse and multifaceted skills to a
+              global audience.
+            </p>
+            <h2>The Hidden Hindu”: A Literary Triumph</h2>
+            <p>
+              Akshat Gupta’s ace, “The Hidden Hindu,” a captivating trilogy
+              interweaving mythology and science fiction, has resonated with
+              readers nationwide, selling over 3 lakh copies. Its visual rights
+              have been secured by Dhoni Entertainment Pvt Ltd, while publishing
+              rights are held by Penguin Random House, a renowned global
+              publishing giant. The trilogy is also available in Hindi, courtesy
+              of Prabhat Prakashan.
+            </p>
           </div>
           <div className="about-image">
             <img
               src="https://wallpapercave.com/wp/wp2722928.jpg"
               alt="About Us"
             />
+            <div className="achivement-heading">Achievements & Appearances</div>
+            <ul>
+              <li>Author</li>
+              <li>Youtuber</li>
+              <li>Awards</li>
+            </ul>
           </div>
         </div>
       </div>

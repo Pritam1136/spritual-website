@@ -78,22 +78,32 @@ body {
 .about-text h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #4169E1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #343771;
 }
 
 .about-text p {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #6A5ACD;
+  color: #343771;
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.achivement-heading {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.achivement-heading ul li {
+  font-size: 1.5rem;
+  padding: 10px;
 }
 
 .mainParagraph {
@@ -103,13 +113,12 @@ body {
   text-align: center; /* Center text within the paragraph */
   padding: 0 20px; /* Optional: Padding for better readability on small screens */
   font-size: larger;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .mainParagraph p {
   max-width: 80%; /* Optional: Limit the paragraph width for better readability */
 }
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {

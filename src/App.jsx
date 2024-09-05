@@ -43,7 +43,7 @@ function App() {
           />
         </div>
         <div className="content">
-          <h4>Akshat ka safar</h4>
+          <h4 className="Ak">Akshat ka safar</h4>
           <div>
             <div className="contentDiv">
               <div>1M+</div>
@@ -94,6 +94,10 @@ function App() {
             </a>
           </li>
         </ul>
+        <Link to={"/contact"}>
+          {" "}
+          <button>Send me a message</button>
+        </Link>
       </div>
     </>
   );

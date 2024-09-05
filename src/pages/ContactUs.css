@@ -8,7 +8,7 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .contact-info,
@@ -72,7 +72,7 @@
 }
 
 .contact-form form button {
-  background-color: #17cf97;
+  background-color: #ffde00;
   color: #fff;
   border: none;
   padding: 10px 20px;

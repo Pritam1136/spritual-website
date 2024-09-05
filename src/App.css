@@ -7,6 +7,10 @@ body {
   color: #333;
 }
 
+.Ak{
+  color: #343771;
+}
+
 /* Full-Width Image Section */
 .full-width-image-container {
   width: 100%;
@@ -75,7 +79,7 @@ body {
   font-size: 2rem;
   padding: -4rem;
   padding: 10px 20px;
-  color: #ffde00;
+  color: #fcb900;
 }
 
 .contentDiv {
@@ -85,7 +89,7 @@ body {
 }
 
 button {
-  background-color: #ffde00;
+  background-color: #fcb900;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -136,7 +140,7 @@ button a {
 }
 
 .social-media ul li a:hover {
-  color: #ffde00;
+  color: #fcb900;
 }
 
 /* Responsive Styles */
